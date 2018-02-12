@@ -12,7 +12,7 @@ Localization in robotics means determining a good approximation of the current p
 Two robots were developed and tested in a simulation environment. The robots successfully navigated the maze using the Adaptive Monte Carlo Localization (AMCL) algorithm. The benchmark definition of one of the robots was given as part of the project, while the second was created independently. The benchmark robot is called ’UdacityBot’ and the second robot designed for this project is called ’DougBot’ throughout this paper. DougBot used the Willow Garage [1] PR2 gripper URDF definition as described in a ROS.org Wiki [2]. The world definition uses a map created by ’jackal race’ was developed by Clearpath Robotics [3].
 
 ### RESULTS
-DougBot navigated the same path as UdacityBot. The dif- ference in mass had no effect on time to reach the goal.
+DougBot navigated the same path as UdacityBot. The difference in mass had no effect on time to reach the goal.
 
 #### Localization Results
 
@@ -26,7 +26,7 @@ The time taken to reach the goal was 14 minutes. At no time did the robot collid
 DougBot is considerably heavier than the benchmark Udac- ityBot. The laser Scanner is placed higher than UdacityBot atop the tower of DougBot and more towards the rear.
 
 ### DISCUSSION
-Both robots performed equally well. DougBot is consider- ably heavier than the benchmark UdacityBot, though the extra mass did not significantly change the time to reach the goal. Perhaps this is due to the fact that friction of the wheels is set to maximum so there is no slippage. This assumption does not reflect real world conditions, where slippage of one wheel may well be quite common, and the difference in mass would then become important.
+Both robots performed equally well. DougBot is considerably heavier than the benchmark UdacityBot, though the extra mass did not significantly change the time to reach the goal. Perhaps this is due to the fact that friction of the wheels is set to maximum so there is no slippage. This assumption does not reflect real world conditions, where slippage of one wheel may well be quite common, and the difference in mass would then become important.
 
 The Laser Scanner placement modification also had no impact on performance in the given environment as the scanner was still lower than the height of the barriers. Had the barriers been lower or of uneven height DougBot may well have collided with a barrier.
 The route taken was circuitous and suboptimal. 
@@ -60,15 +60,15 @@ The two project models are deployed on a Jetson TX2 board running ROS and Ubuntu
 The models were simulated in Gazebo and RViz only, and no drivers were implemented to actuate drive motors or read sensors. The TX2 prototype board has a camera which could be connected into the model. A laser scanner would have to be inte- grated in order for a hardware version to operate. It would also need connections to drive wheels and be implemented on a suitable platform.
 
 ## References
-[1] WillowGarage, “Willow garage home page.” https://www. willowgarage.com, 2018.
+[1] WillowGarage, “Willow garage home page.” https://www.willowgarage.com, 2018.
 
-[2] ROS.ORG,“Buildingavisualrobotmodelwithurdffromscratch.” http://wiki.ros.org/urdf/Tutorials/Building%20a%20Visual% 20Robot%20Model%20with%20URDF%20from%20Scratch, 2018.
+[2] ROS.ORG,“Buildingavisualrobotmodelwithurdffromscratch.” http://wiki.ros.org/urdf/Tutorials/Building%20a%20Visual%20Robot%20Model%20with%20URDF%20from%20Scratch, 2018.
 
-[3] ClearPathRobotics,“Clearpathroboticshomepage.”https://www. clearpathrobotics.com, 2018.
+[3] ClearPathRobotics,“Clearpathroboticshomepage.”https://www.clearpathrobotics.com, 2018.
 
-[4] Hokuyo, “Hokuyo laser scanner home page.” https://www. hokuyo-aut.jp, 2018.
+[4] Hokuyo, “Hokuyo laser scanner home page.” https://www.hokuyo-aut.jp, 2018.
 
-[5] Wikipedia, “Holonomic constraint.” https://en.wikipedia.org/ wiki/Holonomic constraints, 2018.
+[5] Wikipedia, “Holonomic constraint.” https://en.wikipedia.org/wiki/Holonomicconstraints, 2018.
 
-[6] D. Teeple, “Github robond localization project.” https://github. com/douglasteeple/RobotLocalization, 2018.
+[6] D. Teeple, “Github robond localization project.” https://github.com/douglasteeple/RobotLocalization, 2018.
 
