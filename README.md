@@ -38,10 +38,13 @@ The turquoise line section shows the initial route taken. Apparently the navigat
 ### Topics
 
 • Both robots performed performed equally well.
+
 • AMCL does not work well for the kidnapped robot
 problem.
+
 • The scenario that needs to be accounted for in the
 kidnapped robot problem is one of abruptly disappearing from one location and showing up in another.
+
 • MCL/AMCL would work well in any industry domain where clear barriers guide the path of the robot. The ground also needs to be flat and clear of obstacles particularly in the case of DougBot where the Laser Scanner is placed on top of the tower.
 
 ### CONCLUSION / FUTURE WORK
