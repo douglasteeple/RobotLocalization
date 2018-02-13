@@ -35,10 +35,12 @@ int main(int argc, char** argv){
 
   	ac.waitForResult();
 
-  	if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
+    if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
     		ROS_INFO("Excellent! Your robot has reached the goal position.");
-  	else
+    } else {
     		ROS_INFO("The robot failed to reach the goal position");
+            return -1;
+    }
 
   	return 0;
 }
