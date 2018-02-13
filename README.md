@@ -51,24 +51,29 @@ kidnapped robot problem is one of abruptly disappearing from one location and sh
 Both robots reached the goal in the same length of time. Both robots were equally capable of avoiding collisions with the barriers, indicating that localization was working well. The main factor in the time it took to reach the goal was the navigation algorithm. The major contributing factor to the extended time to reach the goal was an error in navigation. This project focused on localization, not navigation.
 
 So, while both robots reached the goal, the circuitous route would mean neither robot model could be applied to commercial products.
+It is possible that changing navigation parameters would permit the global planner to ”see” further and avoid the backtrack. There was insufficient time to pursue this notion.
 Placement of the Laser Scanner at the top of the tower of DougBot may have negative effects if the robot were not on a completely flat surface as is the case in this simulation, but could cause DougBot to miss lower items such as debris should it be present, and to get stuck in the debris.
 
-Future work to make the robots commercially viable would be in working on improving the navigation planner.
+Future work to make the robots commercially viable would be in working on improving or better tuning the navigation planner.
 
 ### Hardware Deployment
-The two project models are deployed on a Jetson TX2 board running ROS and Ubuntu 16.04 Linux. Experience shows that this hardware configuration has adequate processing power both in CPU power and memory to host the model.
-The models were simulated in Gazebo and RViz only, and no drivers were implemented to actuate drive motors or read sensors. The TX2 prototype board has a camera which could be connected into the model. A laser scanner would have to be inte- grated in order for a hardware version to operate. It would also need connections to drive wheels and be implemented on a suitable platform.
+
+1) The two project models are deployed on a Jetson TX2 board running ROS and Ubuntu 16.04 Linux.
+
+2) Experience shows that this hardware configuration has adequate processing power both in CPU power and memory to host the model.
+
+3) The models were simulated in Gazebo and RViz only in this project, and no drivers were implement- ed/integrated to actuate drive motors or read sen- sors. The TX2 prototype board has a camera which could be connected into the model with suitable drivers. Laser scanner hardware and drivers would have to be integrated in order for a hardware ver- sion to operate. It would also need GIO connections to drive wheels and be implemented on a suitable platform modelling the simulation robot.
 
 ## References
 [1] WillowGarage, “Willow garage home page.” https://www.willowgarage.com, 2018.
 
-[2] ROS.ORG,“Buildingavisualrobotmodelwithurdffromscratch.” http://wiki.ros.org/urdf/Tutorials/Building%20a%20Visual%20Robot%20Model%20with%20URDF%20from%20Scratch, 2018.
+[2] ROS.ORG,“Building a visual robot model with urdf from scratch.” http://wiki.ros.org/urdf/Tutorials/Building%20a%20Visual%20Robot%20Model%20with%20URDF%20from%20Scratch, 2018.
 
-[3] ClearPathRobotics,“Clearpathroboticshomepage.”https://www.clearpathrobotics.com, 2018.
+[3] ClearPathRobotics,“Clearpath robotics home page.”https://www.clearpathrobotics.com, 2018.
 
 [4] Hokuyo, “Hokuyo laser scanner home page.” https://www.hokuyo-aut.jp, 2018.
 
 [5] Wikipedia, “Holonomic constraint.” https://en.wikipedia.org/wiki/Holonomicconstraints, 2018.
 
-[6] D. Teeple, “Github robond localization project.” https://github.com/douglasteeple/RobotLocalization, 2018.
+[6] D. Teeple, “Github robo-ND localization project.” https://github.com/douglasteeple/RobotLocalization, 2018.
 
