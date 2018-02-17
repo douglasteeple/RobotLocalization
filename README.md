@@ -19,8 +19,12 @@ DougBot navigated the same path as UdacityBot. The difference in mass had no eff
 ##### Benchmark - UdacityBot
 The time taken to reach the goal was 14 minutes. At no time did the robot collide with a barrier. The maximum number of particles was reduced from 5000 to 200 to meet computational constraints of the deployment environment (NVidia Jetson TX2).
 
+![Benchmark at Goal](udacity_bot/images/udacitybothome3.png "Figure 2. Benchmark At Goal.")
+
 ##### Student - DougBot
 The time taken to reach the goal was 14 minutes. At no time did the robot collide with a barrier. The maximum number of particles was reduced from 5000 to 200 to meet computational constraints of the deployment environment (NVidia Jetson TX2).
+
+![DougBot At Goal](doug_bot/images/dougbothome.png "Figure 3. DougBot At Goal.")
 
 #### Technical Comparison
 DougBot is considerably heavier than the benchmark Udac- ityBot. The laser Scanner is placed higher than UdacityBot atop the tower of DougBot and more towards the rear.
@@ -32,15 +36,14 @@ The Laser Scanner placement modification also had no impact on performance in th
 The route taken was circuitous and suboptimal. 
 
 The route is as shown:
-![A Wrong Turn](doug_bot/images/dougbotroute.jpg "Figure 2. Navigation Route.")
+![A Wrong Turn](doug_bot/images/dougbotroute.jpg "Figure 4. Navigation Route.")
 The turquoise line section shows the initial route taken. Apparently the navigation module was trying to take the shorter red route to the goal, but eventually decided that the gap between walls was too narrow to navigate, so turned around and took the green route to the goal. This error in navigation was the main reason that the robots took 14 minutes to reach the goal.
 
 ### Topics
 
 • Both robots performed performed equally well.
 
-• AMCL does not work well for the kidnapped robot
-problem.
+• AMCL does not work well for the kidnapped robot problem.
 
 • The scenario that needs to be accounted for in the
 kidnapped robot problem is one of abruptly disappearing from one location and showing up in another.
@@ -52,9 +55,11 @@ Both robots reached the goal in the same length of time. Both robots were equall
 
 So, while both robots reached the goal, the circuitous route would mean neither robot model could be applied to commercial products.
 It is possible that changing navigation parameters would permit the global planner to ”see” further and avoid the backtrack. There was insufficient time to pursue this notion.
+
 Placement of the Laser Scanner at the top of the tower of DougBot may have negative effects if the robot were not on a completely flat surface as is the case in this simulation, but could cause DougBot to miss lower items such as debris should it be present, and to get stuck in the debris.
 
 Future work to make the robots commercially viable would be in working on improving or better tuning the navigation planner.
+The model developed contains only one robot. In the future it would be advantageous to handle multiple robots.
 
 ### Hardware Deployment
 
