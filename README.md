@@ -17,17 +17,17 @@ DougBot navigated the same path as UdacityBot. The difference in mass had no eff
 #### Localization Results
 
 ##### Benchmark - UdacityBot
-The time taken to reach the goal was 14 minutes. At no time did the robot collide with a barrier. The maximum number of particles was reduced from 5000 to 200 to meet computational constraints of the deployment environment (NVidia Jetson TX2).
+The time taken to reach the goal was 14 minutes. At no time did the robot collide with a barrier. The maximum number of particles was reduced from 5000 to 200 to meet computational constraints of the deployment environment (NVidia Jetson TX2). Figure 2. Benchmark At Goal:
 
 ![Benchmark at Goal](udacity_bot/images/udacitybothome3.png "Figure 2. Benchmark At Goal.")
 
 ##### Student - DougBot
-The time taken to reach the goal was 14 minutes. At no time did the robot collide with a barrier. The maximum number of particles was reduced from 5000 to 200 to meet computational constraints of the deployment environment (NVidia Jetson TX2).
+The time taken to reach the goal was 14 minutes. At no time did the robot collide with a barrier. The maximum number of particles was reduced from 5000 to 200 to meet computational constraints of the deployment environment (NVidia Jetson TX2). Figure 3. DougBot At Goal:
 
 ![DougBot At Goal](doug_bot/images/dougbothome.png "Figure 3. DougBot At Goal.")
 
 #### Technical Comparison
-DougBot is considerably heavier than the benchmark Udac- ityBot. The laser Scanner is placed higher than UdacityBot atop the tower of DougBot and more towards the rear.
+DougBot is considerably heavier than the benchmark UdacityBot. The laser Scanner is placed higher than UdacityBot atop the tower of DougBot and more towards the rear.
 
 ### DISCUSSION
 Both robots performed equally well. DougBot is considerably heavier than the benchmark UdacityBot, though the extra mass did not significantly change the time to reach the goal. Perhaps this is due to the fact that friction of the wheels is set to maximum so there is no slippage. This assumption does not reflect real world conditions, where slippage of one wheel may well be quite common, and the difference in mass would then become important.
